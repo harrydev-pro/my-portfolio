@@ -477,6 +477,133 @@ button {
 .code a:hover {
   text-decoration: underline;
 }
+.contact-section
+  {
+    padding: 2rem ;
+    display: flex;
+    flex-direction: column;
+  
+    gap: 60px;
+  }
+.contact-section h2{
+    color: var(--text-primary);
+   font-size: 4rem;
+   font-weight: 500;
+   text-align: center;
+  }
+  .contact-section p{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 20px;
+    margin-top: 15px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    
+  }
+   label{
+    color: var(--text-muted);
+   font-size: 1.1rem;
+
+  }
+  form input{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--text-muted);
+    color: var(--text-primary);
+    font-size: 1rem;
+  }
+  form .text{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--text-muted);
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+    display: block !important;
+    padding: 8px 0;
+  }
+  
+  form button{
+    background-color: transparent;
+    border: none;
+    color: var(--text-primary);
+    background-color: var(--surface);
+    margin-top: 10px;
+    position: relative;
+    font-size: 1.24rem;
+  }
+  footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   width: 100%;
+background: var(--surface);
+  margin-top: 15px;
+  box-sizing: border-box;
+  padding: 2rem;
+ 
+  }
+  footer h2{
+    color: var(--text-primary);
+    font-size: 1.5rem;
+
+  }
+  .footer-icon{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .footer-icon ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+
+}
+
+.footer-icon a {
+  display: inline-flex;
+   justify-content: center; 
+   align-items: center; 
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  margin: 1rem 0.5rem 1rem 0;
+  transition: 0.3s ease;
+  padding: 0.5rem;
+  fill: var(--text-primary);
+}
+.footer-icon a:hover {
+  transform: scale(1.2) translateY(-10px);
+  background-color: var(--primary-hover);
+
+  box-shadow: 0 0 25px var(--shadow);
+}
+  
+  
+
+
+
+
+
+
+
+
+
+
+
 
 /* tablet */
 @media screen and (min-width: 769px) {
@@ -524,7 +651,102 @@ button {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+  .contact-section
+  {
+    padding: 2rem ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    gap: 100px;
+  }
+  .contact-section p{
+    text-align: start;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 15px;
+  }
+  .contact-section h2{
+    text-align: start;
+  }
+  form button{
+    background-color: transparent;
+    border: none;
+    color: var(--text-primary);
+    align-self: flex-end;
+    margin-top: 10px;
+    position: relative;
+    font-size: 1.24rem;
+  }
+  form button::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px ;
+    background-color: var(--text-muted);
+  }
+  footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   width: 100%;
+background: var(--surface);
+  margin-top: 15px;
+  box-sizing: border-box;
+  padding: 2rem;
+ 
+  }
+  footer h2{
+    color: var(--text-primary);
+    font-size: 2rem;
+
+  }
+  .footer-icon{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .footer-icon ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+
 }
+
+.footer-icon a {
+  display: inline-flex;
+   justify-content: center; 
+   align-items: center; 
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  margin: 1rem 0.5rem 1rem 0;
+  transition: 0.3s ease;
+  padding: 0.5rem;
+  fill: var(--text-primary);
+}
+.footer-icon a:hover {
+  transform: scale(1.2) translateY(-10px);
+  background-color: var(--primary-hover);
+
+  box-shadow: 0 0 25px var(--shadow);
+}
+  
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* destop */
 @media screen and (min-width: 1024px) {
@@ -703,4 +925,122 @@ button {
   .code a:hover {
     text-decoration: underline;
   }
+  .contact-section
+  {
+ padding: 2rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    gap: 60px;
+  }
+  .contact-section h2{
+    color: var(--text-primary);
+   font-size: 4rem;
+   font-weight: 500;
+   text-align: start;
+  }
+  .contact-section p{
+    text-align: start;
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-top: 15px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    
+  }
+   label{
+    color: var(--text-muted);
+   font-size: 1.1rem;
+
+  }
+  form input{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--text-muted);
+    color: var(--text-primary);
+    font-size: 1rem;
+  }
+  form textarea{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--text-muted);
+    outline: none;
+  }
+  form button{
+    background-color: transparent;
+    border: none;
+    color: var(--text-primary);
+    align-self: flex-end;
+    margin-top: 10px;
+    position: relative;
+    font-size: 1.24rem;
+  }
+  form button::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px ;
+    background-color: var(--text-muted);
+  }
+  footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   width: 100%;
+background: var(--surface);
+  margin-top: 15px;
+  box-sizing: border-box;
+  padding: 2rem;
+ 
+  }
+  footer h2{
+    color: var(--text-primary);
+    font-size: 2rem;
+
+  }
+  .footer-icon{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .footer-icon ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+
+}
+
+.footer-icon a {
+  display: inline-flex;
+   justify-content: center; 
+   align-items: center; 
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  margin: 1rem 0.5rem 1rem 0;
+  transition: 0.3s ease;
+  padding: 0.5rem;
+  fill: var(--text-primary);
+}
+.footer-icon a:hover {
+  transform: scale(1.2) translateY(-10px);
+  background-color: var(--primary-hover);
+
+  box-shadow: 0 0 25px var(--shadow);
+}
+  
 }

@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <div>
+          <h2><a href="#home">skipper</a></h2>
+        </div>
+
+        <!-- desktop nav -->
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#project">project</a></li>
+            <li><a href="#testimony">testimony</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- toggle button -->
+        <div class="icon">
+          <div class="switch-mode">
+            <svg
+              class="toggle-off"
+              id="toggle-off"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+            >
+              <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+              <path
+                d="M416 192C486.7 192 544 249.3 544 320C544 390.7 486.7 448 416 448L224 448C153.3 448 96 390.7 96 320C96 249.3 153.3 192 224 192L416 192zM608 320C608 214 522 128 416 128L224 128C118 128 32 214 32 320C32 426 118 512 224 512L416 512C522 512 608 426 608 320zM224 400C268.2 400 304 364.2 304 320C304 275.8 268.2 240 224 240C179.8 240 144 275.8 144 320C144 364.2 179.8 400 224 400z"
+              />
+            </svg>
+            <svg
+              class="toggle-on"
+              id="toggle-on"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+            >
+              <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+              <path
+                d="M224 128C118 128 32 214 32 320C32 426 118 512 224 512L416 512C522 512 608 426 608 320C608 214 522 128 416 128L224 128zM416 224C469 224 512 267 512 320C512 373 469 416 416 416C363 416 320 373 320 320C320 267 363 224 416 224z"
+              />
+            </svg>
+          </div>
+
+          <!-- menu bar -->
+
+          <div class="">
+            <svg
+              id="hamburger"
+              class="menu-bar"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+            >
+              <path
+                d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+              />
+            </svg>
+            <svg
+              class="xmark"
+              id="xmark"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+            >
+              <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+              <path
+                d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- dropdown -->
+        <div class="slide-down" id="slidedown">
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#project">project</a></li>
+            <li><a href="#testimony">testimony</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- home section -->
+      <section class="home" id="home">
+        <!-- home image -->
+        <div><img class="home-img" src="./images/skipper.jpeg" alt="" /></div>
+
+        <!-- home content -->
+        <div class="home-content">
+          <div class="content">
+            <h2 class="intro">hello, i'm</h2>
+            <h1>badewa razaq</h1>
+            <h3>and i'm a <span id="typing"></span></h3>
+            <p>
+              I’m a Frontend Developer based in Lagos who loves turning Figma
+              designs into pixel-perfect, fast websites. I focus on clean code,
+              mobile-first design, and smooth user experience. Currently
+              leveling up with React and Tailwind.
+            </p>
+          </div>
+
+          <div class="home-icon">
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/razaq-badewa-9a8b03407?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 203.6 103.6 203.6 117.8C203.6 147.5 179.5 172.1 149.8 172.1zM543.9 512L451.2 512L451.2 366.4C451.2 331.7 450.5 287.2 402.9 287.2C354.6 287.2 347.2 324.9 347.2 363.9L347.2 512L254.4 512L254.4 212.9L343.5 212.9L343.5 253.7L344.8 253.7C357.2 230.2 387.5 205.4 432.7 205.4C526.7 205.4 544 267.3 544 347.7L544 512L543.9 512z"
+                    /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="https://wa.me/2348143739308"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"
+                    /></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@skipper_pro0?_r=1&_t=ZS-97N1ypCDKke"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M544.5 273.9C500.5 274 457.5 260.3 421.7 234.7L421.7 413.4C421.7 446.5 411.6 478.8 392.7 506C373.8 533.2 347.1 554 316.1 565.6C285.1 577.2 251.3 579.1 219.2 570.9C187.1 562.7 158.3 545 136.5 520.1C114.7 495.2 101.2 464.1 97.5 431.2C93.8 398.3 100.4 365.1 116.1 336C131.8 306.9 156.1 283.3 185.7 268.3C215.3 253.3 248.6 247.8 281.4 252.3L281.4 342.2C266.4 337.5 250.3 337.6 235.4 342.6C220.5 347.6 207.5 357.2 198.4 369.9C189.3 382.6 184.4 398 184.5 413.8C184.6 429.6 189.7 444.8 199 457.5C208.3 470.2 221.4 479.6 236.4 484.4C251.4 489.2 267.5 489.2 282.4 484.3C297.3 479.4 310.4 469.9 319.6 457.2C328.8 444.5 333.8 429.1 333.8 413.4L333.8 64L421.8 64C421.7 71.4 422.4 78.9 423.7 86.2C426.8 102.5 433.1 118.1 442.4 131.9C451.7 145.7 463.7 157.5 477.6 166.5C497.5 179.6 520.8 186.6 544.6 186.6L544.6 274z"
+                    /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/harrydev-pro"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z"
+                    /></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="btn">
+            <button class="dc"><a href="#contact">hire me</a></button>
+            <button class="hm"><a href="">download cV</a></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section class="about-section" id="about">
+        <!-- about card -->
+        <div class="about-card">
+          <h2>about me</h2>
+          <p>
+            i'm a passionate frontend and backend developer with over 3 years
+            experience. i specialize in designing intuitive user interface and
+            building fast, responsive, and modern website
+          </p>
+          <button>download CV</button>
+        </div>
+
+        <div class="pc-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path
+              d="M128 512L512 512C547.3 512 576 483.3 576 448L576 208C576 172.7 547.3 144 512 144L362.7 144C355.8 144 349 141.8 343.5 137.6L305.1 108.8C294 100.5 280.5 96 266.7 96L128 96C92.7 96 64 124.7 64 160L64 448C64 483.3 92.7 512 128 512z"
+            />
+          </svg>
+          <h2>50+</h2>
+          <p>projects completed</p>
+        </div>
+        <div class="ye-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path
+              d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"
+            />
+          </svg>
+          <h2>2+</h2>
+          <p>years experienced</p>
+        </div>
+        <div class="hc-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path
+              d="M320 64C355.3 64 384 92.7 384 128C384 163.3 355.3 192 320 192C284.7 192 256 163.3 256 128C256 92.7 284.7 64 320 64zM416 376C416 401 403.3 423 384 435.9L384 528C384 554.5 362.5 576 336 576L304 576C277.5 576 256 554.5 256 528L256 435.9C236.7 423 224 401 224 376L224 336C224 283 267 240 320 240C373 240 416 283 416 336L416 376zM160 96C190.9 96 216 121.1 216 152C216 182.9 190.9 208 160 208C129.1 208 104 182.9 104 152C104 121.1 129.1 96 160 96zM176 336L176 368C176 400.5 188.1 430.1 208 452.7L208 528C208 529.2 208 530.5 208.1 531.7C199.6 539.3 188.4 544 176 544L144 544C117.5 544 96 522.5 96 496L96 439.4C76.9 428.4 64 407.7 64 384L64 352C64 299 107 256 160 256C172.7 256 184.8 258.5 195.9 262.9C183.3 284.3 176 309.3 176 336zM432 528L432 452.7C451.9 430.2 464 400.5 464 368L464 336C464 309.3 456.7 284.4 444.1 262.9C455.2 258.4 467.3 256 480 256C533 256 576 299 576 352L576 384C576 407.7 563.1 428.4 544 439.4L544 496C544 522.5 522.5 544 496 544L464 544C451.7 544 440.4 539.4 431.9 531.7C431.9 530.5 432 529.2 432 528zM480 96C510.9 96 536 121.1 536 152C536 182.9 510.9 208 480 208C449.1 208 424 182.9 424 152C424 121.1 449.1 96 480 96z"
+            />
+          </svg>
+          <h2>20+</h2>
+          <p>happy clients</p>
+        </div>
+      </section>
+
+      <!-- skills section -->
+      <section class="skills-section" id="skills">
+        <div><h2>my skills</h2></div>
+
+        <!-- skills container -->
+        <div class="skills-container">
+          <!-- basic -->
+          <div class="basic">
+            <div class="skill">
+              <div class="skill-info">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="90%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-info">
+                <span>CSS</span>
+                <span>85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="85%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-info">
+                <span>javascript</span>
+                <span>50%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="50%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- libary -->
+          <div class="libary">
+            <div class="skill">
+              <div class="skill-info">
+                <span>react.js</span>
+                <span>60%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="60%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <span>tailwind</span>
+                <span>60%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="60%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <span>next.js</span>
+                <span>20%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="20%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- backend -->
+          <div class="backend">
+            <div class="skill">
+              <div class="skill-info">
+                <span>express.js</span>
+                <span>40%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="40%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <span>node.js</span>
+                <span>60%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="60%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <span>mongo DB</span>
+                <span>30%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="30%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- project section -->
+      <section class="project-section" id="project">
+        <div><h2>my project</h2></div>
+        <div class="project-container">
+          <div class="project-card">
+            <img src="./images/news-hompage.jpeg" alt="image" />
+            <h3>news-homepae</h3>
+            <p>html css javascript</p>
+            <div class="code">
+              <a href="https://news-homepage-ashy-eta.vercel.app">view site</a>
+              <a href="https://github.com/harrydev-pro/news-homepage"
+                >view code</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="./images/age-clc.jpeg" alt="image" />
+            <h3>age calculator</h3>
+            <p>html css javascript</p>
+            <div class="code">
+              <a href="https://age-calculator-one-orpin.vercel.app/"
+                >view site</a
+              >
+              <a href="https://github.com/harrydev-pro/age-calculator"
+                >view code</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="./images/socia-media-dashboard.jpeg" alt="image" />
+            <h3>social-media-dashboard</h3>
+            <p>html css javascript</p>
+            <div class="code">
+              <a href="https://media-dashboard-indol.vercel.app/">view site</a>
+              <a href="https://github.com/harrydev-pro/media-dashboard"
+                >view code</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="./images/newsletter-login.jpeg" alt="image" />
+            <h3>newsletter-login</h3>
+            <p>html css javascript</p>
+            <div class="code">
+              <a href="https://newsletter-login-kh4l.vercel.app/">view site</a>
+              <a href="https://github.com/harrydev-pro/newsletter-login"
+                >view code</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="./images/quote app.jpeg" alt="image" />
+            <h3>quote app</h3>
+            <p>html css javascript</p>
+            <div class="code">
+              <a href="https://quote-app-psi-amber.vercel.app/">view site</a>
+              <a href="https://github.com/harrydev-pro/quote-app">view code</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="./images/temp convert.jpeg" alt="image" />
+            <h3>temp-convert</h3>
+            <p>html css javascript</p>
+            <div class="code">
+              <a href="https://temp-convert-gamma.vercel.app/">view site</a>
+              <a href="https://github.com/harrydev-pro/temp-convert"
+                >view code</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- testimony -->
+      <section>
+        <div><h2></h2></div>
+        <div class="testimony-container">
+          <div class="testimony-card"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- script -->
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -269,14 +269,17 @@ button {
   border: none;
   border-radius: 10px;
   font-weight: 700;
+  cursor: pointer;
 }
 .btn .dc {
   background: var(--primary);
-  color: white;
+   color: white;
+ 
 }
 .btn .hm {
   background: var(--bg-color);
   border: 2px solid var(--border);
+
 }
 .btn a {
   color: var(--text-primary);
@@ -315,9 +318,13 @@ button {
 .about-card button {
   background-color: var(--bg-color);
   border: 2px solid var(--border);
-  color: var(--primary);
+ 
   font-size: 1.2rem;
   font-weight: 500;
+}
+.about-card button a{
+  text-decoration: none;
+   color: var(--primary);
 }
 
 .pc-card {
@@ -451,6 +458,7 @@ button {
 .project-card:hover {
   transform: scale(1.05);
   background-color: var(--primary-hover);
+  cursor: pointer;
 }
 .project-card img {
   width: 100%;
@@ -476,6 +484,7 @@ button {
 }
 .code a:hover {
   text-decoration: underline;
+
 }
 .contact-section
   {
@@ -521,12 +530,14 @@ button {
     color: var(--text-primary);
     font-size: 1rem;
   }
-  form .text{
+  form textarea{
     width: 100%;
     height: 100px;
     background-color: transparent;
     border: none;
     border-bottom: 2px solid var(--text-muted);
+    color: var(--text-primary);
+    font-size: 0.9rem;
     outline: none;
     resize: none;
     box-sizing: border-box;
@@ -542,6 +553,7 @@ button {
     margin-top: 10px;
     position: relative;
     font-size: 1.24rem;
+    cursor: pointer;
   }
   footer{
     display: flex;
@@ -1042,5 +1054,24 @@ background: var(--surface);
 
   box-shadow: 0 0 25px var(--shadow);
 }
+.testimony-section{
+  padding: 1.5rem;
+}
+.card-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--card);
+  padding: 1rem;
+  
+}
+
+.card-list img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+
+}
+
   
 }

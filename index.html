@@ -274,7 +274,7 @@
             </div>
             <div class="skill">
               <div class="skill-info">
-                <span>next.js</span>
+                <span>bootstrap</span>
                 <span>20%</span>
               </div>
               <div class="progress-bar">
@@ -284,6 +284,7 @@
           </div>
 
           <!-- backend -->
+           <!--
           <div class="backend">
             <div class="skill">
               <div class="skill-info">
@@ -313,6 +314,8 @@
               </div>
             </div>
           </div>
+          -->
+
         </div>
       </section>
 
@@ -402,28 +405,36 @@
           </p>
         </div>
 
-        <form class="contact-form">
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xkolrjbz" method="post">
           <div>
             <label for="name">name</label> <br />
-            <input type="text" />
+            <input type="text" id="name" name="name"/> <br>
+            <span id="name-error">enter your name</span>
           </div>
 
           <div>
             <label for="mail">email</label> <br />
-            <input type="email" />
+            <input type="email" id="email" name="email"/><br>
+             <span id="mail-error">enter a valid email</span>
           </div>
 
           <div>
             <label for="phone">phone</label> <br />
-            <input type="tel" />
+            <input type="tel" id="phone" inputmode="numeric" name="phone"/> <br>
+             <span id="phone-error">enter a valid number</span>
           </div>
 
           <div>
             <label for="">message</label> <br />
-           <textarea name="" id=""></textarea>
+           <textarea name="" id="message" name="message"></textarea> <br>
+            <span id="text-error">enter your message</span>
           </div>
 
-          <button type="submit">send message</button>
+          <input type="hidden" name="_replyto" id="replyto">
+
+          <button type="submit" id="sendBtn" >send message</button>
+
+            <p id="form-status" style="margin-top:10px;"></p>
         </form>
       </section>
 

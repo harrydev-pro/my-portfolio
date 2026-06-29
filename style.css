@@ -537,7 +537,7 @@ button {
     border: none;
     border-bottom: 2px solid var(--text-muted);
     color: var(--text-primary);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     outline: none;
     resize: none;
     box-sizing: border-box;
@@ -603,7 +603,11 @@ background: var(--surface);
 
   box-shadow: 0 0 25px var(--shadow);
 }
-  
+form span{
+  color: red;
+  margin-top: 10px;
+  display: none;
+}
   
 
 
@@ -643,7 +647,7 @@ background: var(--surface);
   }
   .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   .skill {
@@ -856,7 +860,7 @@ background: var(--surface);
   }
   .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   .skill {

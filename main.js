@@ -4,8 +4,6 @@ const closeEl = document.getElementById("xmark");
 const offEl = document.getElementById("toggle-off");
 const onEl = document.getElementById("toggle-on");
 const progressBars = document.querySelectorAll(".progress");
-
-const ngPhonePattern = /^(?:\+234|0|234)?[789]\d{9}$/;
 const nameEl = document.getElementById("name");
 const emailEl = document.getElementById("email");
 const phoneEl = document.getElementById("phone");
@@ -14,7 +12,12 @@ const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const sendEL = document.getElementById("sendBtn");
 const statusEl = document.getElementById('form-status');
 const form = document.getElementById('contact-form');
+phoneEl.addEventListener('input', () => {
+  phoneEl.value = phoneEl.value.replace(/[^+\d]/g, ''); // block letters, spaces, ()
+});
 
+// 2. Validate on submit: 8 to 15 digits, + optional
+const internationalPhonePattern = /^\+?\d{8,15}$/;
 
 //for validation
 
@@ -31,13 +34,23 @@ else{
   document.getElementById('name-error').style.display = "none";
 }
 
-if (!ngPhonePattern.test(phoneEl.value.replace(/\s/g, "")) || phoneEl.value.trim() === '') {
- document.getElementById('phone-error').style.display = "block";
- isValid = false;
-}
-else{
-document.getElementById('phone-error').style.display = "none";
-}
+const rawPhone = phoneEl.value.trim();
+  const phoneDigitsOnly = rawPhone.replace(/\D/g, ''); // remove + for length check
+
+
+  if (rawPhone === '') {
+    document.getElementById('phone-error').textContent = "Phone number is required";
+    document.getElementById('phone-error').style.display = "block";
+    isValid = false;
+  } else if (!internationalPhonePattern.test(rawPhone)) {
+    document.getElementById('phone-error').textContent = "Enter 8-15 digits. Use + for country code. Ex: +2348031234567";
+    document.getElementById('phone-error').style.display = "block";
+    isValid = false;
+  }
+  else{
+     document.getElementById('phone-error').style.display = "none";
+  }
+
 
 
 if (!emailPattern.test(emailEl.value) || emailEl.value.trim()  === '') {
